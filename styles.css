@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff714;
+}
+
+.main {
+  width: 300px;
+  height: 380px;
+  border-radius: 8px;
+  border: 2px solid #000;
+  padding: 25px 15px;
+  background-color: #a9faff;
+}
+
+.topline {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.first__number,
+.second__number {
+  width: 68px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ffa500;
+  padding: 0 5px;
+}
+
+.first__number {
+}
+
+.condition__sign {
+  width: 9px;
+}
+
+.second__number {
+}
+.equal__sign {
+}
+.result {
+  width: 85px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ffa500;
+  padding: 0 5px;
+}
+
+.action__section {
+  display: grid;
+  /* gap: 10px; */
+  grid-template: 1fr / 67% 30%;
+}
+
+.digits {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.digit__style {
+  width: 40px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid hsl(239, 100%, 74%);
+  background-color: #eee;
+  cursor: pointer;
+}
+.digit__style:hover,
+.condition__style:hover,
+.equal:hover {
+  border: 2px solid #000;
+}
+
+.digit__7 {
+}
+
+.digit__8 {
+}
+
+.digit__9 {
+}
+
+.digit__4 {
+}
+
+.digit__5 {
+}
+
+.digit__6 {
+}
+
+.digit__1 {
+}
+
+.digit__2 {
+}
+
+.digit__3 {
+}
+
+.digit__0 {
+}
+
+.digit__00 {
+}
+
+.digit__dot {
+}
+
+.conditions {
+  display: grid;
+  grid-template-rows: repeat(4, 39px) 50px;
+  gap: 10px;
+}
+
+.condition__style {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid hsl(239, 100%, 74%);
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.subtraction {
+}
+
+.addition {
+}
+
+.multiplication {
+}
+
+.division {
+}
+
+.equal {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid hsl(239, 100%, 74%);
+  background-color: #eee;
+  cursor: pointer;
+}
