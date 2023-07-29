@@ -9,18 +9,8 @@ const multiplication = document.querySelector(".multiplication");
 const division = document.querySelector(".division");
 const equal = document.querySelector(".equal");
 const conditionSign = document.querySelector(".condition__sign");
-const digit1 = document.querySelector(".digit__1");
-const digit2 = document.querySelector(".digit__2");
-const digit3 = document.querySelector(".digit__3");
-const digit4 = document.querySelector(".digit__4");
-const digit5 = document.querySelector(".digit__5");
-const digit6 = document.querySelector(".digit__6");
-const digit7 = document.querySelector(".digit__7");
-const digit8 = document.querySelector(".digit__8");
-const digit9 = document.querySelector(".digit__9");
-const digit0 = document.querySelector(".digit__0");
-const digit00 = document.querySelector(".digit__00");
 const reset = document.querySelector(".digit__reset");
+const digitAll = document.querySelectorAll(".digit");
 
 firstNumber.focus();
 
@@ -42,17 +32,9 @@ let inputDataAndChangeFocus = function (element) {
     }
   });
 };
-inputDataAndChangeFocus(digit1);
-inputDataAndChangeFocus(digit2);
-inputDataAndChangeFocus(digit3);
-inputDataAndChangeFocus(digit4);
-inputDataAndChangeFocus(digit5);
-inputDataAndChangeFocus(digit6);
-inputDataAndChangeFocus(digit7);
-inputDataAndChangeFocus(digit8);
-inputDataAndChangeFocus(digit9);
-inputDataAndChangeFocus(digit0);
-inputDataAndChangeFocus(digit00);
+for(let i = 0; i < digitAll.length;i++){
+  inputDataAndChangeFocus(digitAll[i]);
+}
 
 let actions = function (el1, el2) {
   el1.addEventListener("click", () => {
