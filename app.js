@@ -55,7 +55,11 @@ equal.addEventListener("click", () => {
   } else if (conditionSign.textContent === "*") {
     result.value = Number(firstNumber.value) * Number(secondNumber.value);
   } else if (conditionSign.textContent === "/") {
+    if(secondNumber.value == 0){
+    alert("Division by zero is impossible!")
+    } else {
     result.value = Number(firstNumber.value) / Number(secondNumber.value);
+    }
   }
 });
 
